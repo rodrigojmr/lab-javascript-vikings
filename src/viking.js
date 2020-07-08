@@ -70,7 +70,7 @@ class War {
     // const result = randomSaxon.receiveDamage(randomViking.strength);
     // if (randomSaxon.health <= 0) {
     //   this.saxonArmy.splice(
-    //     this.saxonArmy[(this.saxonArmy.indexOf(randomSaxon), 1)]
+    //     this.saxonArmy.splice(this.saxonArmy.indexOf(randomViking), 1);
     //   );
     // }
     return this.armyAttack(this.vikingArmy, this.saxonArmy);
@@ -84,9 +84,7 @@ class War {
     // ];
     // const result = randomViking.receiveDamage(randomSaxon.strength);
     // if (randomViking.health <= 0) {
-    //   this.vikingArmy.splice(
-    //     this.vikingArmy[(this.vikingArmy.indexOf(randomSaxon), 1)]
-    //   );
+    //   this.vikingArmy.splice(this.vikingArmy.indexOf(randomSaxon), 1);
     // }
     return this.armyAttack(this.saxonArmy, this.vikingArmy);
   }
