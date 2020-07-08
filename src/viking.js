@@ -97,9 +97,7 @@ class War {
     const unitFromArmy = army[Math.floor(army.length * Math.random())];
     const result = unitFromOpposingArmy.receiveDamage(unitFromArmy.strength);
     if (unitFromOpposingArmy.health <= 0) {
-      opposingArmy.splice(
-        opposingArmy[(opposingArmy.indexOf(unitFromOpposingArmy), 1)]
-      );
+      opposingArmy.splice(opposingArmy.indexOf(unitFromOpposingArmy), 1);
     }
     return result;
   }
